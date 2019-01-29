@@ -1,0 +1,32 @@
+{
+  "name": "karim-qaderi/zoroaster-column-filter",
+  "description": "A Laravel Zoroaster column queryer filter",
+  "authors": [
+    {
+      "name": "Karim Qaderi",
+      "email": "karimqaderi1@gmail.com"
+    }
+  ],
+  "keywords": [
+    "laravel",
+    "Zoroaster"
+  ],
+  "require": {
+    "php": ">=7.1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "KarimQaderi\\ZoroasterColumnFilter\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "KarimQaderi\\ZoroasterColumnFilter\\FilterServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
