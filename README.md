@@ -2,14 +2,26 @@
 
 
 
-
-
-
 ## نصب 
 
-Run this command in your Laravel  project:
+فایل composer.json باز کنید و کد زیر رو قرار دهید :
 
-`composer require ZoroasterColumnFilter/nova-column-filter`
+```json
+    "require": {
+        "karim-qaderi/zoroaster-column-filter": "*"
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/KarimQaderi/Zoroaster-Column-Filter.git"
+        }
+    ],
+```
+
+```bash
+composer update
+```
+
 
 ## استفاده 
 
@@ -28,6 +40,8 @@ Run this command in your Laravel  project:
 
     class ColumnFilter extends Filter
     {
+        public $label="فیلتر ستون";
+        
         public function columns()
         {
             return [
